@@ -1,0 +1,23 @@
+[
+{
+"id":1,
+"nombre":"Juan Pérez",
+"credencial":"TR4521",
+"bodycam":"BC015",
+"estado":"Activo"
+},
+{
+"id":2,
+"nombre":"María Rodríguez",
+"credencial":"TR7781",
+"bodycam":"BC008",
+"estado":"Activo"
+},
+{
+"id":3,
+"nombre":"Carlos Gómez",
+"credencial":"TR3355",
+"bodycam":"BC019",
+"estado":"Licencia"
+}
+]

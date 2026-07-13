@@ -1,0 +1,26 @@
+[
+{
+"id":1,
+"codigo":"BC015",
+"serie":"AX452188",
+"inspector":"Juan Pérez",
+"bateria":96,
+"estado":"Operativa"
+},
+{
+"id":2,
+"codigo":"BC008",
+"serie":"AX998722",
+"inspector":"María Rodríguez",
+"bateria":75,
+"estado":"Operativa"
+},
+{
+"id":3,
+"codigo":"BC019",
+"serie":"AX115874",
+"inspector":"Carlos Gómez",
+"bateria":12,
+"estado":"En carga"
+}
+]

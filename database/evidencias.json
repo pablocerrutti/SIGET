@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "fecha":"2026-07-10",
+        "hora":"09:15",
+        "tipo":"Video",
+        "archivo":"BC015_0001.mp4",
+        "estado":"Procesado",
+        "inspector":"Juan Pérez"
+    },
+    {
+        "id":2,
+        "fecha":"2026-07-10",
+        "hora":"09:25",
+        "tipo":"Fotografía",
+        "archivo":"IMG_00015.jpg",
+        "estado":"Procesado",
+        "inspector":"Juan Pérez"
+    }
+]

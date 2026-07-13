@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SIGET | Gestión BodyCam</title>
+
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>SIGET</h2>
+
+<p>
+Dirección de Tránsito y Transporte
+</p>
+
+</div>
+
+
+
+
+
+<ul>
+
+
+<li onclick="location.href='dashboard.html'">
+
+🏠 Dashboard
+
+</li>
+
+
+<li class="activo">
+
+📷 BodyCam
+
+</li>
+
+
+
+<li class="salir" onclick="cerrarSesion()">
+
+🚪 Salir
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="contenido">
+
+
+
+<header>
+
+
+<h1>
+
+Asignación de BodyCam
+
+</h1>
+
+
+<div id="usuarioActual"></div>
+
+
+</header>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+Registrar equipo BodyCam
+
+</h2>
+
+
+
+
+<label>
+
+Número de equipo
+
+</label>
+
+
+<input 
+type="text"
+id="numero"
+placeholder="Ejemplo: BC-015">
+
+
+
+
+
+
+<label>
+
+ID Inspector asignado
+
+</label>
+
+
+<input
+type="text"
+id="idInspector"
+placeholder="Ejemplo: INS-025">
+
+
+
+
+
+
+<label>
+
+Nombre inspector
+
+</label>
+
+
+<input
+type="text"
+id="nombreInspector"
+placeholder="Nombre completo">
+
+
+
+
+
+
+
+<label>
+
+Estado
+
+</label>
+
+
+<select id="estado">
+
+
+<option>
+
+Activo
+
+</option>
+
+
+<option>
+
+Mantenimiento
+
+</option>
+
+
+<option>
+
+Disponible
+
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<button onclick="guardarBodycam()">
+
+💾 Guardar asignación
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+Equipos registrados
+
+</h2>
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>
+
+Equipo
+
+</th>
+
+
+<th>
+
+Inspector
+
+</th>
+
+
+<th>
+
+ID
+
+</th>
+
+
+<th>
+
+Estado
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+<tbody id="tablaBodycam">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="../js/bodycam.js"></script>
+
+
+</body>
+
+
+</html>

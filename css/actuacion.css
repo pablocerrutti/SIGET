@@ -1,0 +1,85 @@
+.tarjeta{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+margin-bottom:25px;
+
+box-shadow:0 3px 12px rgba(0,0,0,.15);
+
+}
+
+.tarjeta label{
+
+display:block;
+
+margin-top:15px;
+
+font-weight:bold;
+
+}
+
+.tarjeta input,
+.tarjeta select,
+.tarjeta textarea{
+
+width:100%;
+
+padding:12px;
+
+margin-top:6px;
+
+border-radius:6px;
+
+border:1px solid #ccc;
+
+}
+
+.tarjeta textarea{
+
+height:120px;
+
+}
+
+.acciones{
+
+display:flex;
+
+gap:20px;
+
+margin:30px 0;
+
+}
+
+.acciones button{
+
+flex:1;
+
+padding:22px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:10px;
+
+background:#1565c0;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+.panelArchivos{
+
+background:white;
+
+padding:20px;
+
+border-radius:12px;
+
+}

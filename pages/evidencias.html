@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>SIGET | Evidencias</title>
+
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+
+</head>
+
+
+<body>
+
+
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>SIGET</h2>
+
+<p>
+Dirección de Tránsito y Transporte
+</p>
+
+
+</div>
+
+
+
+
+
+<ul>
+
+
+<li onclick="location.href='dashboard.html'">
+
+🏠 Dashboard
+
+</li>
+
+
+
+<li class="activo">
+
+📹 Evidencias
+
+</li>
+
+
+
+
+
+<li onclick="location.href='nueva_actuacion.html'">
+
+📝 Nueva Actuación
+
+</li>
+
+
+
+
+<li class="salir" onclick="cerrarSesion()">
+
+🚪 Salir
+
+</li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="contenido">
+
+
+
+
+
+<header>
+
+
+<h1>
+
+Gestión de Evidencias
+
+</h1>
+
+
+
+<div id="usuarioActual"></div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+
+<h2>
+
+Registro de evidencias
+
+</h2>
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+
+ID
+
+</th>
+
+
+
+<th>
+
+Tipo
+
+</th>
+
+
+
+<th>
+
+Archivo
+
+</th>
+
+
+
+<th>
+
+Actuación
+
+</th>
+
+
+
+<th>
+
+Responsable
+
+</th>
+
+
+
+<th>
+
+Estado
+
+</th>
+
+
+
+<th>
+
+Acción
+
+</th>
+
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+<tbody id="tablaEvidencias">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card" id="detalle" style="display:none;">
+
+
+
+<h2>
+
+Detalle evidencia
+
+</h2>
+
+
+
+
+<div id="vista">
+
+
+</div>
+
+
+
+
+<button onclick="irCadena()">
+
+📁 Ver Cadena de Custodia
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="../js/evidencias.js"></script>
+
+
+
+</body>
+
+
+</html>

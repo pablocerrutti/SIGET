@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>SIGET | Dashboard</title>
+
+
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- MENU LATERAL -->
+
+<div class="sidebar">
+
+
+
+<div class="logo">
+
+
+<h2>SIGET</h2>
+
+<p>
+Dirección de Tránsito y Transporte
+</p>
+
+
+<p>
+Versión 1.0
+</p>
+
+
+</div>
+
+
+
+
+
+<ul class="menu-siget">
+
+
+
+<li class="activo">
+
+🏠 Dashboard
+
+</li>
+
+
+
+
+
+<li class="soloInspector"
+onclick="location.href='nueva_actuacion.html'">
+
+📝 Nueva Actuación
+
+</li>
+
+
+
+
+
+<li class="soloInspector"
+onclick="location.href='evidencias.html'">
+
+📹 Evidencias
+
+</li>
+
+
+
+
+
+<li class="soloInspector"
+onclick="location.href='actas.html'">
+
+📄 Actas
+
+</li>
+
+
+
+
+
+<li class="soloInspector"
+onclick="location.href='incidencias.html'">
+
+🚨 Incidencias
+
+</li>
+
+
+
+
+
+
+
+<li class="soloAdmin"
+onclick="location.href='inspectores.html'">
+
+👮 Inspectores
+
+</li>
+
+
+
+
+
+
+
+<li class="soloAdmin"
+onclick="location.href='bodycam.html'">
+
+📷 BodyCam
+
+</li>
+
+
+
+
+
+
+
+
+<li class="soloAdmin soloAuditor"
+onclick="location.href='cadena.html'">
+
+📁 Cadena Custodia
+
+</li>
+
+
+
+
+
+
+
+<li class="soloAdmin soloAuditor"
+onclick="location.href='reportes.html'">
+
+📊 Reportes
+
+</li>
+
+
+
+
+
+
+
+
+<li class="soloAdmin"
+onclick="location.href='configuracion.html'">
+
+⚙ Configuración
+
+</li>
+
+
+
+
+
+
+
+
+<li class="soloAdmin"
+onclick="location.href='usuarios.html'">
+
+👤 Usuarios
+
+</li>
+
+
+
+
+
+
+
+<li class="salir"
+onclick="cerrarSesion()">
+
+🚪 Salir del sistema
+
+</li>
+
+
+
+
+
+</ul>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CONTENIDO -->
+
+
+<div class="contenido">
+
+
+
+
+
+<header>
+
+
+
+<div>
+
+
+<h1>
+Dashboard SIGET
+</h1>
+
+
+<p>
+Sistema Integral de Gestión de Evidencias de Tránsito
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div id="usuarioActual">
+
+
+</div>
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<section class="cards">
+
+
+
+
+
+<div class="card azul">
+
+
+<h2 id="totalEvidencias">
+
+0
+
+</h2>
+
+
+<p>
+
+Evidencias registradas
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card verde">
+
+
+<h2 id="totalActas">
+
+0
+
+</h2>
+
+
+<p>
+
+Actas generadas
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card rojo">
+
+
+<h2 id="totalIncidencias">
+
+0
+
+</h2>
+
+
+<p>
+
+Incidencias
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card naranja">
+
+
+<h2>
+
+100%
+
+</h2>
+
+
+<p>
+
+Sincronización
+
+</p>
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="card actividad">
+
+
+
+<h2>
+
+Actividad reciente
+
+</h2>
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>
+Hora
+</th>
+
+
+<th>
+Evento
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+09:25
+</td>
+
+
+<td>
+Video de evidencia cargado
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+09:40
+</td>
+
+
+<td>
+Nueva actuación registrada
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+10:05
+</td>
+
+
+<td>
+Incidencia ingresada
+</td>
+
+
+</tr>
+
+
+
+
+
+</tbody>
+
+
+</table>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<footer class="footer-institucional">
+
+
+SIGET - Sistema desarrollado por la Dirección de Tránsito y Transporte
+
+
+</footer>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<script src="../js/dashboard.js"></script>
+
+
+</body>
+
+
+</html>

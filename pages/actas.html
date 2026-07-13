@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>SIGET - Actas</title>
+
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="contenido">
+
+
+
+<header>
+
+
+<h1>
+📄 Gestión de Actas
+</h1>
+
+
+<button onclick="location.href='dashboard.html'">
+
+⬅ Volver
+
+</button>
+
+
+</header>
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>
+Nueva Acta
+</h2>
+
+
+
+
+<label>
+ID Actuación
+</label>
+
+
+<input
+id="idActuacion"
+placeholder="ACT-00001">
+
+
+
+
+
+
+<label>
+Matrícula
+</label>
+
+
+<input
+id="matricula"
+placeholder="ABC1234">
+
+
+
+
+
+<label>
+Tipo de infracción
+</label>
+
+
+<input
+id="infraccion"
+placeholder="Ej: Exceso de velocidad">
+
+
+
+
+
+
+<label>
+Descripción
+</label>
+
+
+<textarea id="descripcion"></textarea>
+
+
+
+
+
+
+<button onclick="guardarActa()">
+
+CREAR ACTA
+
+</button>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>
+Actas registradas
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>
+Número
+</th>
+
+<th>
+Actuación
+</th>
+
+<th>
+Matrícula
+</th>
+
+<th>
+Inspector
+</th>
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="listaActas">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src="../js/actas.js"></script>
+
+
+
+</body>
+
+</html>

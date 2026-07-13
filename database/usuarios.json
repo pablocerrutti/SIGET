@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "usuario":"admin",
+        "password":"admin",
+        "nombre":"Administrador General",
+        "rol":"Administrador",
+        "estacion":"Central",
+        "bodycam":"BC-000"
+    },
+    {
+        "id":2,
+        "usuario":"inspector",
+        "password":"inspector",
+        "nombre":"Juan Pérez",
+        "rol":"Inspector",
+        "estacion":"Zona Centro",
+        "bodycam":"BC-015"
+    },
+    {
+        "id":3,
+        "usuario":"auditor",
+        "password":"auditor",
+        "nombre":"María Rodríguez",
+        "rol":"Auditor",
+        "estacion":"Auditoría",
+        "bodycam":""
+    }
+]

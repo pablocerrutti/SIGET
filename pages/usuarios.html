@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SIGET | Usuarios</title>
+
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+
+<h2>SIGET</h2>
+
+<p>
+Dirección de Tránsito y Transporte
+</p>
+
+
+</div>
+
+
+
+
+
+<ul>
+
+
+<li onclick="location.href='dashboard.html'">
+
+🏠 Dashboard
+
+</li>
+
+
+
+<li class="activo">
+
+👤 Usuarios
+
+</li>
+
+
+
+
+<li onclick="location.href='bodycam.html'">
+
+📷 BodyCam
+
+</li>
+
+
+
+
+<li class="salir" onclick="cerrarSesion()">
+
+🚪 Salir
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="contenido">
+
+
+
+<header>
+
+
+<h1>
+
+Gestión de Usuarios e Inspectores
+
+</h1>
+
+
+<div id="usuarioActual"></div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+Nuevo Inspector
+
+</h2>
+
+
+
+
+
+<label>
+
+Nombre completo
+
+</label>
+
+
+<input 
+id="nombre"
+placeholder="Nombre del inspector">
+
+
+
+
+
+
+<label>
+
+Cédula / Identificador institucional
+
+</label>
+
+
+<input
+
+id="documento"
+
+placeholder="Ejemplo: 45678912"
+
+>
+
+
+
+
+
+
+
+<label>
+
+Usuario de acceso
+
+</label>
+
+
+<input
+
+id="usuario"
+
+placeholder="Ejemplo: inspector25"
+
+>
+
+
+
+
+
+
+
+<label>
+
+Contraseña provisoria
+
+</label>
+
+
+<input
+
+id="password"
+
+value="Cambio123"
+
+>
+
+
+
+
+
+
+
+
+<label>
+
+Rol
+
+</label>
+
+
+<select id="rol">
+
+
+<option value="Inspector">
+
+Inspector
+
+</option>
+
+
+
+<option value="Auditor">
+
+Auditor
+
+</option>
+
+
+
+<option value="Administrador">
+
+Administrador
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+
+<button onclick="crearUsuario()">
+
+➕ Crear usuario
+
+</button>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+Usuarios registrados
+
+</h2>
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+
+ID
+
+</th>
+
+
+<th>
+
+Nombre
+
+</th>
+
+
+<th>
+
+Usuario
+
+</th>
+
+
+<th>
+
+Rol
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="tablaUsuarios">
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="../js/usuarios.js"></script>
+
+
+</body>
+
+</html>

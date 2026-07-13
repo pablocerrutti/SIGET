@@ -1,0 +1,57 @@
+.menuPrincipal{
+
+display:grid;
+
+grid-template-columns:repeat(2,300px);
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+.menuPrincipal button{
+
+height:180px;
+
+font-size:26px;
+
+border:none;
+
+border-radius:15px;
+
+background:#1565c0;
+
+color:white;
+
+cursor:pointer;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+transition:.3s;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.menuPrincipal button:hover{
+
+transform:scale(1.03);
+
+background:#0d47a1;
+
+}
+
+.menuPrincipal span{
+
+margin-top:15px;
+
+font-size:22px;
+
+}

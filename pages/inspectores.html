@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>SIGET - Inspectores</title>
+
+<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+<div class="contenido">
+
+
+<header>
+
+<h1>Gestión de Inspectores</h1>
+
+<button onclick="location.href='dashboard.html'">
+
+⬅ Volver
+
+</button>
+
+</header>
+
+
+
+<section class="card">
+
+
+<h2>Registrar Nuevo Inspector</h2>
+
+
+
+<label>
+Nombre completo
+</label>
+
+
+<input 
+type="text"
+id="nombre"
+placeholder="Nombre del inspector">
+
+
+
+<label>
+ID Único SIGET
+</label>
+
+
+<input 
+type="text"
+id="idInspector"
+placeholder="Ej: INS001">
+
+
+
+<label>
+Contraseña provisoria
+</label>
+
+
+<input 
+type="text"
+id="password"
+value="SIGET2026">
+
+
+
+<button onclick="crearInspector()">
+
+CREAR INSPECTOR
+
+</button>
+
+
+</section>
+
+
+
+
+<section class="card">
+
+
+<h2>Inspectores registrados</h2>
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Nombre</th>
+
+<th>Usuario</th>
+
+<th>Estado</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="listaInspectores">
+
+
+</tbody>
+
+
+</table>
+
+
+</section>
+
+
+</div>
+
+
+
+<script src="../js/inspectores.js"></script>
+
+
+</body>
+
+</html>

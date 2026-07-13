@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>SIGET | Reportes</title>
+
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>SIGET</h2>
+
+<p>
+Dirección de Tránsito y Transporte
+</p>
+
+</div>
+
+
+
+
+<ul>
+
+
+<li onclick="location.href='dashboard.html'">
+
+🏠 Dashboard
+
+</li>
+
+
+
+<li class="activo">
+
+📊 Reportes
+
+</li>
+
+
+
+
+<li class="salir" onclick="cerrarSesion()">
+
+🚪 Salir
+
+</li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="contenido">
+
+
+
+
+
+<header>
+
+
+<h1>
+
+Reportes Institucionales
+
+</h1>
+
+
+<div id="usuarioActual"></div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<section class="cards">
+
+
+
+
+
+<div class="card azul">
+
+<h2 id="totalActuaciones">
+
+0
+
+</h2>
+
+<p>
+
+Actuaciones
+
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="card verde">
+
+
+<h2 id="totalEvidencias">
+
+0
+
+</h2>
+
+
+<p>
+
+Evidencias
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card naranja">
+
+
+<h2 id="totalBodycam">
+
+0
+
+</h2>
+
+
+<p>
+
+Equipos BodyCam
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card rojo">
+
+
+<h2 id="totalIncidencias">
+
+0
+
+</h2>
+
+
+<p>
+
+Incidencias
+
+</p>
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+Resumen de actividad
+
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+
+Indicador
+
+</th>
+
+
+
+<th>
+
+Cantidad
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody>
+
+
+
+<tr>
+
+<td>
+
+Usuarios registrados
+
+</td>
+
+
+<td id="usuarios">
+
+0
+
+</td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+
+Actas generadas
+
+</td>
+
+
+<td id="actas">
+
+0
+
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+
+Evidencias en custodia
+
+</td>
+
+
+<td id="custodia">
+
+0
+
+</td>
+
+
+</tr>
+
+
+
+
+
+</tbody>
+
+
+</table>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="../js/reportes.js"></script>
+
+
+
+</body>
+
+</html>

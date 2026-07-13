@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>SIGET | Cadena de Custodia</title>
+
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+<h2>SIGET</h2>
+
+<p>
+Dirección de Tránsito y Transporte
+</p>
+
+</div>
+
+
+
+
+<ul>
+
+
+<li onclick="location.href='dashboard.html'">
+
+🏠 Dashboard
+
+</li>
+
+
+
+<li class="activo">
+
+📁 Cadena Custodia
+
+</li>
+
+
+
+
+<li class="salir" onclick="cerrarSesion()">
+
+🚪 Salir
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="contenido">
+
+
+
+
+
+<header>
+
+
+<h1>
+
+Cadena de Custodia
+
+</h1>
+
+
+<div id="usuarioActual"></div>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+Evidencias bajo custodia
+
+</h2>
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>
+ID
+</th>
+
+
+<th>
+Tipo
+</th>
+
+
+<th>
+Origen
+</th>
+
+
+<th>
+Responsable
+</th>
+
+
+<th>
+Estado
+</th>
+
+
+<th>
+Acción
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="tablaEvidencias">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="visor" class="card" style="display:none;">
+
+
+
+<h2>
+
+Detalle de evidencia
+
+</h2>
+
+
+
+
+<div id="contenidoPreview">
+
+
+</div>
+
+
+
+<br>
+
+
+<button onclick="descargarEvidencia()">
+
+⬇ Descargar archivo
+
+</button>
+
+
+
+<h3>
+
+Historial
+
+</h3>
+
+
+
+<div id="historial">
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="../js/cadena.js"></script>
+
+
+</body>
+
+
+</html>

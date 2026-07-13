@@ -1,0 +1,18 @@
+[
+{
+"id":1,
+"archivo":"BC015_0001.mp4",
+"hash":"5B39A6C7D9A12F3E887C55A11BCDEF90876AB11223344AA99887766554433221",
+"fecha":"10/07/2026 09:15",
+"inspector":"Juan Pérez",
+"estado":"Íntegro"
+},
+{
+"id":2,
+"archivo":"IMG_00015.jpg",
+"hash":"CC8822AA9988776655441100BBCCDDEE88997766554433221122334455667788",
+"fecha":"10/07/2026 09:20",
+"inspector":"Juan Pérez",
+"estado":"Íntegro"
+}
+]

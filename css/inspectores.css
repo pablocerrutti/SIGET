@@ -1,0 +1,53 @@
+.barra{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-bottom:20px;
+
+}
+
+.barra button{
+
+background:#1565c0;
+
+color:white;
+
+padding:14px 20px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+.barra input{
+
+width:320px;
+
+padding:12px;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+}
+
+.activoInspector{
+
+color:green;
+
+font-weight:bold;
+
+}
+
+.acciones button{
+
+margin-right:5px;
+
+padding:8px 12px;
+
+}

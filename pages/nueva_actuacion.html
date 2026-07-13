@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>SIGET - Nueva Actuación</title>
+
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="contenido">
+
+
+
+<header>
+
+
+<h1>
+
+Nueva Actuación
+
+</h1>
+
+
+
+<button onclick="location.href='dashboard.html'">
+
+⬅ Volver
+
+</button>
+
+
+</header>
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>
+Datos del procedimiento
+</h2>
+
+
+
+
+<label>
+Matrícula vehículo
+</label>
+
+
+<input id="matricula"
+placeholder="ABC1234">
+
+
+
+
+
+
+<label>
+Vehículo
+</label>
+
+
+<input id="vehiculo"
+placeholder="Marca / Modelo">
+
+
+
+
+
+
+
+<label>
+Motivo de actuación
+</label>
+
+
+<input id="motivo"
+placeholder="Control, accidente, infracción...">
+
+
+
+
+
+
+<label>
+Observaciones
+</label>
+
+
+<textarea id="obs"></textarea>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="card">
+
+
+<h2>
+Evidencias
+</h2>
+
+
+
+
+
+<input 
+type="file"
+id="fotos"
+accept="image/*"
+multiple
+hidden>
+
+
+
+<input 
+type="file"
+id="videos"
+accept="video/*"
+multiple
+hidden>
+
+
+
+
+
+<button onclick="agregarFotos()">
+
+📷 Agregar Fotografías
+
+</button>
+
+
+
+
+
+<button onclick="agregarVideos()">
+
+🎥 Agregar Videos
+
+</button>
+
+
+
+
+
+<div id="listaArchivos">
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<button 
+class="guardar"
+onclick="guardarActuacion()">
+
+GUARDAR ACTUACIÓN
+
+</button>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script src="../js/nueva_actuacion.js"></script>
+
+
+
+</body>
+
+
+</html>
