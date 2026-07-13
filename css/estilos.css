@@ -975,129 +975,269 @@ text-align:center;
 
 
 
-/*====================================
-    SPLASH SIGET
-====================================*/
+
+
+
+
+
+/* =====================================
+   SPLASH INICIAL SIGET
+===================================== */
+
 
 .splash{
 
+
 height:100vh;
+
 
 display:flex;
 
-justify-content:center;
 
 align-items:center;
 
-background:radial-gradient(circle,#12395a,#06101c);
+
+justify-content:center;
+
+
+
+background:
+
+
+radial-gradient(
+circle,
+#12395a,
+#050d17
+);
+
+
 
 overflow:hidden;
 
-}
-
-.splash-container{
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-justify-content:center;
-
-animation:aparecer 1s;
 
 }
 
-.splash-logo{
 
-width:900px;
 
-max-width:90vw;
 
-margin-bottom:25px;
 
-animation:logoFade 1.2s;
+.splash .logo{
 
-}
 
-.loader{
+text-align:center;
 
-width:60px;
 
-height:60px;
+animation:
 
-border-radius:50%;
+aparecer 1.5s ease;
 
-border:5px solid rgba(255,255,255,.25);
-
-border-top:5px solid #4fc3f7;
-
-animation:girar 1s linear infinite;
 
 }
 
-.cargando{
 
-margin-top:18px;
+
+
+
+.splash h1{
+
+
+font-size:90px;
+
+
+letter-spacing:8px;
+
+
+color:#38bdf8;
+
+
+animation:
+
+
+brilloSIGET 2s infinite alternate;
+
+
+
+}
+
+
+
+.splash h2{
+
+
+color:white;
+
+
+font-weight:400;
+
 
 font-size:18px;
 
-color:#ffffff;
-
-letter-spacing:1px;
 
 }
+
+
+
+
+
+.loader{
+
+
+width:60px;
+
+
+height:60px;
+
+
+border-radius:50%;
+
+
+border:
+
+5px solid rgba(255,255,255,.2);
+
+
+
+border-top:
+
+5px solid #38bdf8;
+
+
+
+animation:
+
+
+girar 1s linear infinite;
+
+
+
+margin:20px auto;
+
+
+
+}
+
+
+
+
+.institucion{
+
+
+margin-top:20px;
+
+
+color:#94a3b8;
+
+
+font-size:13px;
+
+
+}
+
+
+
+
+.institucion strong{
+
+
+color:#38bdf8;
+
+
+}
+
+
+
+
+
+
 
 @keyframes girar{
 
+
 100%{
+
 
 transform:rotate(360deg);
 
-}
 
 }
+
+
+}
+
+
+
+
 
 @keyframes aparecer{
 
-from{
+
+0%{
+
 
 opacity:0;
 
-transform:scale(.95);
+
+transform:scale(.8);
+
 
 }
 
-to{
+
+100%{
+
 
 opacity:1;
+
 
 transform:scale(1);
 
-}
 
 }
 
-@keyframes logoFade{
+
+}
+
+
+
+
+
+@keyframes brilloSIGET{
+
 
 from{
 
-opacity:0;
 
-transform:translateY(-20px);
+text-shadow:
+
+0 0 10px #0284c7;
+
 
 }
+
+
 
 to{
 
-opacity:1;
 
-transform:translateY(0);
+text-shadow:
+
+0 0 35px #38bdf8,
+0 0 60px #0284c7;
+
 
 }
 
+
+
 }
+
+
+
+
+
+
+
+
 
 /* =====================================
    FOOTER INSTITUCIONAL
